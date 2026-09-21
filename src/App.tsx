@@ -4,6 +4,7 @@ import { Postulate } from '@/components/Postulate';
 import { Readings } from '@/components/Readings';
 import { Arguments } from '@/components/Arguments';
 import { Participation } from '@/components/Participation';
+import { Quiz } from '@/components/Quiz';
 import { Conclusion } from '@/components/Conclusion';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 
@@ -32,6 +33,9 @@ function App() {
       </ErrorBoundary>
       <ErrorBoundary>
         <Participation />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Quiz />
       </ErrorBoundary>
       <ErrorBoundary>
         <Conclusion onNavigate={handleNavigate} />

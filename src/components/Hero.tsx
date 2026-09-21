@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Sparkles, ChevronDown, BookOpen, Users, Lightbulb, MessageCircle, ArrowDown } from 'lucide-react';
+import { Sparkles, ChevronDown, BookOpen, Users, Lightbulb, MessageCircle, ArrowDown, Brain } from 'lucide-react';
 
 interface HeroProps {
   onNavigate: (section: string) => void;
@@ -13,6 +13,7 @@ export function Hero({ onNavigate }: HeroProps) {
     { id: 'lecturas', label: 'Lecturas', icon: BookOpen },
     { id: 'argumentos', label: 'Argumentos', icon: Users },
     { id: 'participacion', label: 'Participa', icon: MessageCircle },
+    { id: 'quiz', label: 'Quiz', icon: Brain },
   ];
 
   return (
